@@ -61,3 +61,6 @@ TODO:
     T-code: consists of letters, numbers, or both, and is entered in the
             command field at the top of any SAP GUI screen. Each function
             in SAP ERP has an SAP transaction code associated with it.
+            
+           
+    Fiori allows to create GUIs
