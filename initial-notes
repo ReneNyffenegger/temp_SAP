@@ -57,3 +57,7 @@ TODO:
     CCMS: Computer Center Management System
        Allows monitoring of R/3 Systems
        Comes free with each SAP System
+       
+    T-code: consists of letters, numbers, or both, and is entered in the
+            command field at the top of any SAP GUI screen. Each function
+            in SAP ERP has an SAP transaction code associated with it.
