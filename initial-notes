@@ -1,0 +1,59 @@
+Three types of data in an SAP system:
+   - master data,
+   - transactional data
+   - historical data.
+   
+Big Five:
+  - Material Master
+  - Customer Master
+  - Vendor Master
+  - Bill of Materials (BOM)
+  - Routings
+
+LSMW: Legacy System Migration Workbench - a SAP tool for conversion
+      that permits data loading using flat files extracted from the Legacy System.
+      TODO: Compare with TDMS
+      
+      
+TODO:      
+   S/4 HANA 
+     Deadline: after 2025 all Systems will run on HANA.
+   
+   SAP BW/4HANA
+
+   SCP: SAP Cloud Platform
+     ABAP will not be the same.
+
+   HANA Migration Cockpit toolset
+   
+   SAP TDMS: Test DAta Migration System
+   
+   SAP S/4HANA is SAP’s ERP for large enterprises and the next-generation business suite
+     S stands for simple.
+     It is the successor of SAP R/3 and SAP ERP
+     It is optimized for SAP HANA
+     
+     Two editions:
+        - SAP S/4HANA On-Premise
+        - SAP S/4HANA Cloud.
+     
+     Launch of S/4 HANA took place on 3 Febraury 2015.
+     
+     ABAP
+       Originally: Allgemeiner Berichtsaufbereitungsprozessor
+       Now       : Advanced Business Application Programming
+       ABAP/4
+       
+       Open SQL is used for SAP database access in the ABAP programming language.
+     
+     ALV: ABAP List Viewer
+     
+     R/3
+       SAP R/3, which was officially launched on 6 July 1992
+       The current successor software to SAP R/3 is known as SAP S/4HANA
+       
+       DIALOGG STEP (between two user inputs?)
+   
+    CCMS: Computer Center Management System
+       Allows monitoring of R/3 Systems
+       Comes free with each SAP System
