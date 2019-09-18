@@ -1,0 +1,17 @@
+Bestehende BW-Systeme basieren hauptsächlich auf SAP NetWeaver. Sie werden den
+neuen Anforderungen an das Reporting nicht mehr gerecht.
+
+SAP BW ist die Abkürzung für das SAP Business Information Warehouse,
+das inzwischen SAP NetWeaver Business Intelligence (SAP BI) genannt wird.
+("BI" für das Produkt BW ist mit Release 7.3 wieder verschwunden,)
+
+SAP BW ist ein kostenloser und integraler Bestandteil verschiedener SAP-Lösungen. 
+
+Aktuell (Stand Q4 2017) liegt die Software in der Version 7.5 aus dem Jahr 2015 vor.
+
+Topaktuell ist außerdem das Produkt BW/4HANA, das als Nachfolger der
+klassischen BW-Produktlinie speziell auf die Nutzung der SAP-eigenen
+HANA-Datenbank ausgerichtet ist.
+-
+SAP BW/4HANA ist ein vollständig neues Produkt der SAP und nicht als Nachfolger
+früherer Releases wie Business Warehouse 7.x anzusehen.
