@@ -1,3 +1,6 @@
+SAP hat unter anderem Business Objects und Sybase gekauft.
+
+
 Three types of data in an SAP system:
    - master data,
    - transactional data
@@ -64,3 +67,35 @@ TODO:
             
            
     Fiori allows to create GUIs
+
+    Crystel Report
+
+    IDoc
+      in Behälter für den Austausch von daten zwischen R/3, R/2 und Fremdystemen.
+
+    BW = Business Warehouse
+
+    WEBI = Business Objects?
+
+    BEx – Business Explorer
+      offers a high focus on user productivity, with formatted reporting,
+      intuitive ad-hoc analysis, advanced Excel integration, and model-driven BI
+      applications, as well as business planning.
+
+    BFA – Business Framework Architecture
+        A component-based architecture enabling software components from SAP
+        and from other software vendors to communicate and be integrated with
+        each other.
+
+    Solution Manager
+      a central support and system management suite provided to SAP's customers
+      as part of their license agreement. As an SAP system landscape may
+      include a large number of installed SAP and non-SAP systems, SAP Solution
+      Manager is intended to reduce and centralize the management of these
+      systems and end-to-end business processes.
+
+   ALE
+     middleware tool in SAP's BFA.
+
+     ALE can integrate business processes between R/3 Systems and non-R/3
+     systems as well as between R/3 Systems.
