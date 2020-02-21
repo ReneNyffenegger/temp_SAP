@@ -17,12 +17,135 @@ LSMW: Legacy System Migration Workbench - a SAP tool for conversion
       that permits data loading using flat files extracted from the Legacy System.
       TODO: Compare with TDMS
       
+SAP S/4HANA is SAP’s ERP for large enterprises and the next-generation business suite {
+     S stands for simple.
+     It is the successor of SAP R/3 and SAP ERP
+     It is optimized for SAP HANA
+
+     SAP ERP Java components are obsolete with SAP S/4HANA. 
+       -> You have to remove the technical Java system from the respective productive system in the Landscape Management Database (LMDB).
+     
+     Two editions:
+        - SAP S/4HANA On-Premise
+        - SAP S/4HANA Cloud.
+     
+     Launch of S/4 HANA took place on 3 Febraury 2015.
+
+   Migration {
+
+     Prerequisites:
+       - System needs to be a Unicode System
+          --> Use  Unicode Conversion Overview (on SAP SCN)
+       - AS ABAP-only system  
+          (DUal stack systems (AS ABAP and AS Java combined in one system are not supported and need to be split before migration) [ SAP Note  1686144,  1686144 ]
+
+     Prepare Phase
+       - Planning & System requirements
+       - Maintenance Planner
+       - SI-Check  (SI = Simplificati-Item ?)
+       - Custom Code Migratin
+
+     Realize Phase
+       - Software Update Manager
+           . DB Migraion
+           . Software Update
+           . Data Conversion
+       - Cross-app & app-specific follow-on activities
+
+
+
+      Prepare Phase {
+  
+       Maintenance Planner {
+  
+        You need to run the maintenance planner tool as a first step in the
+        conversion process. It checks your components, add-ons, and business
+        functions to ensure compatibility with SAP S/4HANA and also create the
+        stack file used for the actual conversion process (done by the Software
+        Update Manager tool).
+  
+       }
+       Simplification Item-Check {
+  
+         These checks identify important steps you need to take to make sure that your system can technically be
+         converted and that your business processes can start running directly after the conversion process has
+         been completed.
+  
+         This step is mandatory and will be triggered again by the Software Update Manager. Ideally, you run the
+         Simplification Item-Check (SI-Check) early in the process, so that you can take note of the planning
+         information provided by the checks. Note that you no longer need the stack file for the checks
+  
+       }
+       SAP Readiness Check {
+  
+         We highly recommend to run the SAP Readiness Check for SAP S/4HANAin advance of your
+         conversion project to identify any issues you need to consider and activities you need to do in
+         preparation for your project.
+  
+       }
+       Custom Code Migration {
+  
+         The custom code migration tool checks your custom code against a list of
+         simplifications developed for SAP S/4HANA.
+  
+       }
+
+     }
+     { Realize Phase
+
+       This step is mandatory and will be triggered again by the Software Update Manager. Ideally, you run the
+       Simplification Item-Check (SI-Check) early in the process, so that you can take note of the planning
+       information provided by the checks. Note that you no longer need the stack file for the checks
+
+       Software Update Manager (SUM) {
+
+         The SUM does the database migration (if required), the actual software
+         update, and the data conversion.
+
+       }
+
+       
+
+     }
+
+     Tools {
+
+       SAP Readiness Checkcheck / Simplification Item {
+
+         The tools SAP Readiness Check and Simplification Item-Check (SI-Check) are used to support the conversion
+         process, see also Overview of the Conversion Process [page 8]. The following table explains the differences
+         between the two tools.
+
+       }
+
+        SAP DVM Work Center (DVM WoC) in SAP Solution Manager {
+
+           Apparently needed for data reduction which allows for shorter migration times.
+         
+
+        }
+
+
+     }
+
+
+   }
+
+
+
+}
+SAP BW/4HANA {
+
+   is the next-generation business suite. It is fully built on the most advanced in-memory platform
+   existing today: SAP HANA. 
+
+
+}
       
 TODO:      
    S/4 HANA 
      Deadline: after 2025 all Systems will run on HANA.
    
-   SAP BW/4HANA
 
    SCP: SAP Cloud Platform
      ABAP will not be the same.
@@ -31,16 +154,6 @@ TODO:
    
    SAP TDMS: Test DAta Migration System
    
-   SAP S/4HANA is SAP’s ERP for large enterprises and the next-generation business suite
-     S stands for simple.
-     It is the successor of SAP R/3 and SAP ERP
-     It is optimized for SAP HANA
-     
-     Two editions:
-        - SAP S/4HANA On-Premise
-        - SAP S/4HANA Cloud.
-     
-     Launch of S/4 HANA took place on 3 Febraury 2015.
      
      ABAP
        Originally: Allgemeiner Berichtsaufbereitungsprozessor
@@ -66,7 +179,7 @@ TODO:
             in SAP ERP has an SAP transaction code associated with it.
             
            
-    Fiori allows to create GUIs
+    Fiori allows to create GUIs (SAP Fiori user experience (UX))
 
     Crystel Report
 
@@ -93,6 +206,13 @@ TODO:
       include a large number of installed SAP and non-SAP systems, SAP Solution
       Manager is intended to reduce and centralize the management of these
       systems and end-to-end business processes.
+
+   LMDB - Landscape Management Database {
+
+       SAP ERP Java components are obsolete with SAP S/4HANA. You have to remove the technical Java system
+       from the respective productive system in the Landscape Management Database (LMDB)
+
+   }
 
    ALE
      middleware tool in SAP's BFA.
